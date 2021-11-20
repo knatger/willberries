@@ -1,16 +1,10 @@
 const search = function() {
   const input = document.querySelector('.search-block > input')
-  const searchBtn = document.querySelector('.btn-outline-secondary')
-  let input_value;
-
-  input.addEventListener('input',(event) => {
-    input_value = event.target.value
-  })
+  const searchBtn = document.querySelector('.search-block > button')
 
   searchBtn.addEventListener('click',() => {
-    console.log(input_value)
+    console.log(input.value)
   })
-s
 }
 
 search()
